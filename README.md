@@ -1,2 +1,29 @@
-# Amir0rr.github.io
-My portofilo Website
+# سایت نمونه‌کار امیرحسین
+
+سایت شخصی من برای نمایش پروژه‌ها، مهارت‌ها و راه‌های ارتباطی.
+
+**[مشاهده‌ی سایت](https://amir0rr.github.io/)**
+
+![پیش‌نمایش سایت](Images/og-image.png)
+
+## ویژگی‌ها
+
+- طراحی ریسپانسیو برای موبایل، تبلت و دسکتاپ
+- نسخه‌ی فارسی و راست‌به‌چین
+- منوی موبایل با انیمیشن و پشتیبانی از کیبورد
+- نمایش پنج پروژه همراه با لینک دمو و کد
+
+## ابزارها
+
+HTML5، CSS3 (Grid و Flexbox)، JavaScript، فونت Vazirmatn
+
+## اجرا روی کامپیوتر
+
+    git clone https://github.com/Amir0rr/Amir0rr.github.io.git
+
+بعد فایل index.html را در مرورگر باز کن.
+
+## ارتباط با من
+
+- ایمیل: aarman3000@gmail.com
+- تلگرام: https://t.me/Amir_0rr
