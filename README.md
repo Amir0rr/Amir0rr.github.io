@@ -1,29 +1,35 @@
-# سایت نمونه‌کار امیرحسین
+# Portfolio Website
 
-سایت شخصی من برای نمایش پروژه‌ها، مهارت‌ها و راه‌های ارتباطی.
+My personal portfolio website, built to showcase my projects, skills and contact details.
 
-**[مشاهده‌ی سایت](https://amir0rr.github.io/)**
+**[View the live site](https://amir0rr.github.io/)**
 
-![پیش‌نمایش سایت](Images/og-image.png)
+![Portfolio preview](Images/og-image.png)
 
-## ویژگی‌ها
+## Features
 
-- طراحی ریسپانسیو برای موبایل، تبلت و دسکتاپ
-- نسخه‌ی فارسی و راست‌به‌چین
-- منوی موبایل با انیمیشن و پشتیبانی از کیبورد
-- نمایش پنج پروژه همراه با لینک دمو و کد
+- Responsive design for mobile, tablet and desktop
+- Persian content with right-to-left layout
+- Animated mobile menu with keyboard support (Escape key and click outside to close)
+- Five featured projects with live demo and source code links
+- Clean, light theme with a consistent color palette
 
-## ابزارها
+## Built with
 
-HTML5، CSS3 (Grid و Flexbox)، JavaScript، فونت Vazirmatn
+- HTML5
+- CSS3 (Grid, Flexbox, custom properties)
+- JavaScript
+- Vazirmatn font
 
-## اجرا روی کامپیوتر
+## Run locally
 
-    git clone https://github.com/Amir0rr/Amir0rr.github.io.git
+```bash
+git clone https://github.com/Amir0rr/Amir0rr.github.io.git
+```
 
-بعد فایل index.html را در مرورگر باز کن.
+Then open `index.html` in your browser.
 
-## ارتباط با من
+## Contact
 
-- ایمیل: aarman3000@gmail.com
-- تلگرام: https://t.me/Amir_0rr
+- Email: aarman3000@gmail.com
+- Telegram: [Amir_0rr](https://t.me/Amir_0rr)
