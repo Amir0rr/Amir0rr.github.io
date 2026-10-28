@@ -285,7 +285,7 @@ main section h2::after {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 15px;
 }
 
