@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="امیرحسین آرمان، توسعه‌دهنده‌ی فرانت‌اند. نمونه‌کارها شامل لندینگ پیج و اپ‌های وب با HTML، CSS و JavaScript.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:title" content="امیرحسین | توسعه‌دهنده‌ی فرانت‌اند">
+    <meta property="og:description" content="نمونه‌کارهای من: لندینگ پیج و اپ‌های وب">
+    <meta property="og:url" content="https://amir0rr.github.io/">
+    <meta property="og:image" content="https://amir0rr.github.io/Images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>امیرحسین | توسعه دهنده فرانت‌اند</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="Images/a_208px.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="name">
+                <a href="index.html">امیرحسین</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#projects">پروژه‌ها</a></li>
+                    <li><a href="#about-me">درباره‌ی من</a></li>
+                    <li><a href="#skills">مهارت‌های من</a></li>
+                    <li><a href="#contact-me">ارتباط با من</a></li>
+                </ul>
+            </div>
+            <button class="dropdown-btn" aria-label="باز و بسته کردن منو" aria-expanded="false">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+              </button>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a href="#projects" class="dropdown-link">
+                            پروژه‌ها
+                        </a></li>
+                    <li><a href="#about-me" class="dropdown-link">
+                            درباره‌ی من
+                        </a></li>
+                    <li><a href="#skills" class="dropdown-link">
+                            مهارت‌های من
+                        </a></li>
+                    <li><a href="#contact-me" class="dropdown-link">
+                            ارتباط با من
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <div class="hero-texts">
+                    <p class="hero-greeting">سلام، من امیرحسین آرمان هستم</p>
+                    <h1>صفحه‌های وبی می‌سازم که تمیز و ریسپانسیو هستن</h1>
+                    <p class="hero-subtitle">توسعه‌دهنده‌ی فرانت‌اند، متمرکز بر لندینگ پیج و اپ‌های وب</p>
+                </div>
+                <div class="hero-btns">
+                    <a href="#projects" class="primary-btn">دیدن پروژه‌ها</a>
+                    <a href="#contact-me" class="secondary-btn">ارتباط با من</a>
+                </div>
+            </section>
+
+            <section class="projects" id="projects">
+                <h2>پروژه‌های من</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <img src="Images/projects/to-do-app.png" alt="پروژه To-DO-App" class="card-img">
+                        <h3 class="card-name">To-Do-App</h3>
+                        <p class="card-info">اپلیکیشن مدیریت کار‌های روزانه با افزودن، ویرایش، حذف و
+                            فیلتر (همه/فعال/انجام شده) که داده‌ها توی مرورگر ذخیره می‌شن.</p>
+                        <ul class="card-tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>LocalStorage</li>
+                        </ul>
+                        <div class="card-links">
+                            <a href="https://amir0rr.github.io/To-Do-App/" target="_blank" rel="noopener noreferrer"
+                                class="primary-btn">دمو</a>
+                            <a href="https://github.com/Amir0rr/To-Do-App" target="_blank" rel="noopener noreferrer"
+                                class="secondary-btn">GitHub</a>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="Images/projects/weather-app.png" alt="Weather App" class="card-img">
+                        <h3 class="card-name">Weather App</h3>
+                        <p class="card-info">با جستجوی نام شهر، دما، سرعت باد و وضعیت هوا رو از یک API عمومی می‌گیره و
+                            نشون می‌ده، همراه با پیام بارگذاری و مدیریت خطا.</p>
+                        <ul class="card-tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>REST API</li>
+                            <li>async/await</li>
+                        </ul>
+                        <div class="card-links">
+                            <a href="https://amir0rr.github.io/Weather-app/" target="_blank" rel="noopener noreferrer"
+                                class="primary-btn">دمو</a>
+                            <a href="https://github.com/Amir0rr/Weather-app" target="_blank" rel="noopener noreferrer"
+                                class="secondary-btn">GitHub</a>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="Images/projects/tasklyft.png" alt="Tasklyft" class="card-img">
+                        <h3 class="card-name">Tasklyft</h3>
+                        <p class="card-info">لندینگ پیج یه ابزار مدیریت پروژه‌ی فرضی، با داشبورد ساخته‌شده با CSS، جدول
+                            قیمت، سوالات متداول (آکاردئون) و فرم ثبت‌نام با اعتبارسنجی.</p>
+                        <ul class="card-tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Responsive</li>
+                        </ul>
+                        <div class="card-links">
+                            <a href="https://amir0rr.github.io/Tasklyft/" target="_blank" rel="noopener noreferrer"
+                                class="primary-btn">دمو</a>
+                            <a href="https://github.com/Amir0rr/Tasklyft" target="_blank" rel="noopener noreferrer"
+                                class="secondary-btn">GitHub</a>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="Images/projects/deepfocus.png" alt="DeepFocus" class="card-img">
+                        <h3 class="card-name">DeepFocus</h3>
+                        <p class="card-info">لندینگ پیج یه اپ تمرکز فرضی با تم تاریک، انیمیشن ظاهر شدن کارت‌ها هنگام
+                            اسکرول و فرم تماس با اعتبارسنجی.</p>
+                        <ul class="card-tags">
+                            <li>HTML</li>
+                            <li>CSS Grid</li>
+                            <li>JavaScript</li>
+                            <li>Responsive</li>
+                        </ul>
+                        <div class="card-links">
+                            <a href="https://amir0rr.github.io/DeepFocus/" target="_blank" rel="noopener noreferrer"
+                                class="primary-btn">دمو</a>
+                            <a href="https://github.com/Amir0rr/DeepFocus" target="_blank" rel="noopener noreferrer"
+                                class="secondary-btn">GitHub</a>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="Images/projects/goodcoffee.png" alt="GoodCoffee" class="card-img">
+                        <h3 class="card-name">GoodCoffee</h3>
+                        <p class="card-info">لندینگ پیج یه برند قهوه‌ی فرضی با پالت گرم، معرفی محصولات، نظرات مشتریان و
+                            فرم خبرنامه.</p>
+                        <ul class="card-tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Responsive</li>
+                        </ul>
+                        <div class="card-links">
+                            <a href="https://amir0rr.github.io/GoodCoffee/" target="_blank" rel="noopener noreferrer"
+                                class="primary-btn">دمو</a>
+                            <a href="https://github.com/Amir0rr/GoodCoffee" target="_blank" rel="noopener noreferrer"
+                                class="secondary-btn">GitHub</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-me" id="about-me">
+                <h2>درباره من</h2>
+                <p>سلام! من امیرحسین هستم، توسعه‌دهنده‌ی فرانت‌اند. کدنویسی رو با HTML و CSS شروع کردم و در حال برنامه
+                    نویسی و یادگیری JavaScript و Git هستم. تا حالا چند لندینگ پیج و وب اپ ساختم که کدشون رو خودم نوشتم.
+                    به
+                    ریسپانسیو بودن و جزئیات طراحیم توجه ویژه‌ای دارم. دنبال پروژه‌ی لندینگ پیج و فرصت کار به عنوان
+                    برنامه نویس فرانت‌اند هستم.</p>
+            </section>
+
+            <section class="skills" id="skills">
+                <h2>مهارت‌های من</h2>
+                <div class="skills-flex">
+                    <div class="skill-card">
+                        <img src="Images/html5-original.svg" alt="html" class="skill-icon" loading="lazy">
+
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="Images/css3-original.svg" alt="css" class="skill-icon" loading="lazy">
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="Images/javascript-original.svg" alt="javascript" class="skill-icon" loading="lazy">
+
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="Images/git-original.svg" alt="git" class="skill-icon" loading="lazy">
+
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="Images/github-original.svg" alt="github" class="skill-icon" loading="lazy">
+
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="Images/noun_responsiveweb_526630.svg" alt="Responsive-design" class="skill-icon"
+                            loading="lazy">
+
+                        <h3>Responsive Design</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-me" id="contact-me">
+                <h2>ارتباط با من</h2>
+                <div class="contact-links">
+                    <a href="mailto:aarman3000@gmail.com"><img src="Images/gmail_logo_480px.svg"
+                            alt="">aarman3000@gmail.com</a>
+                    <a href="https://github.com/Amir0rr" target="_blank" rel="noopener noreferrer">
+                        <img src="Images/github-original.svg" alt="گیت هاب من"></a>
+                    <a href="https://t.me/Amir_0rr" target="_blank" rel="noopener noreferrer"><img
+                            src="Images/telegram_app_480px.svg" alt="تلگرام من"></a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© ۱۴۰۵ امیرحسین آرمان</p>
+    </footer>
+
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
