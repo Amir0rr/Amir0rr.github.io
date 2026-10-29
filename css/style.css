@@ -252,10 +252,29 @@ main section h2::after {
   margin-top: auto;
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .card-links a {
   flex: 1;
+}
+
+.details-btn {
+  flex-basis: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-soft);
+  color: var(--primary-hover);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.details-btn:hover {
+  background-color: var(--primary);
+  color: var(--text-on-primary);
 }
 
 /* About */
@@ -400,6 +419,87 @@ footer {
   display: block;
   padding: 10px 15px;
   color: var(--text);
+}
+
+/* Modal */
+
+dialog {
+  margin: auto;
+  border: none;
+  border-radius: 12px;
+  padding: 0;
+  width: min(700px, 92vw);
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+dialog::backdrop {
+  background-color: rgba(15, 23, 42, 0.6);
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+}
+
+.dialog-close {
+  align-self: flex-start;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 10px;
+  background: none;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dialog-close:hover {
+  background-color: var(--primary-soft);
+}
+
+#dialog-img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#dialog-title {
+  font-size: 20px;
+  color: var(--text);
+}
+
+#dialog-desc {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+#dialog-features {
+  padding-inline-start: 20px;
+}
+
+#dialog-features li {
+  list-style: disc;
+  color: var(--text-muted);
+}
+
+.dialog-links {
+  display: flex;
+  gap: 15px;
+}
+
+.dialog-links a {
+  flex: 1;
 }
 
 /* Responsive */

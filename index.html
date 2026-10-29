@@ -70,7 +70,6 @@
                     <a href="#contact-me" class="secondary-btn">ارتباط با من</a>
                 </div>
             </section>
-
             <section class="projects" id="projects">
                 <h2>پروژه‌های من</h2>
                 <div class="cards-grid">
@@ -91,11 +90,12 @@
                                 class="primary-btn" aria-label="دمو To-DO-App">دمو</a>
                             <a href="https://github.com/Amir0rr/To-Do-App" target="_blank" rel="noopener noreferrer"
                                 class="secondary-btn" aria-label="گیت هاب To-DO-App">GitHub</a>
+                            <button class="details-btn" data-project="todo">جزئیات</button>
                         </div>
 
                     </div>
                     <div class="card">
-                        <img src="Images/projects/weather-app.webp" alt="Weather App" class="card-img" loading="lazy">>
+                        <img src="Images/projects/weather-app.webp" alt="Weather App" class="card-img" loading="lazy">
                         <h3 class="card-name">Weather App</h3>
                         <p class="card-info">با جستجوی نام شهر، دما، سرعت باد و وضعیت هوا رو از یک API عمومی می‌گیره و
                             نشون می‌ده، همراه با پیام بارگذاری و مدیریت خطا.</p>
@@ -111,11 +111,12 @@
                                 class="primary-btn" aria-label="دمو weather-app">دمو</a>
                             <a href="https://github.com/Amir0rr/Weather-app" target="_blank" rel="noopener noreferrer"
                                 class="secondary-btn" aria-label="گیت هاب weather-app">GitHub</a>
+                            <button class="details-btn" data-project="weather">جزئیات</button>
                         </div>
 
                     </div>
                     <div class="card">
-                        <img src="Images/projects/tasklyft.webp" alt="Tasklyft" class="card-img" loading="lazy">>
+                        <img src="Images/projects/tasklyft.webp" alt="Tasklyft" class="card-img" loading="lazy">
                         <h3 class="card-name">Tasklyft</h3>
                         <p class="card-info">لندینگ پیج یه ابزار مدیریت پروژه‌ی فرضی، با داشبورد ساخته‌شده با CSS، جدول
                             قیمت، سوالات متداول (آکاردئون) و فرم ثبت‌نام با اعتبارسنجی.</p>
@@ -130,11 +131,12 @@
                                 class="primary-btn" aria-label="دمو Tasklyft">دمو</a>
                             <a href="https://github.com/Amir0rr/Tasklyft" target="_blank" rel="noopener noreferrer"
                                 class="secondary-btn" aria-label="گیت هاب Tasklyft">GitHub</a>
+                            <button class="details-btn" data-project="tasklyft">جزئیات</button>
                         </div>
 
                     </div>
                     <div class="card">
-                        <img src="Images/projects/deepfocus.webp" alt="DeepFocus" class="card-img" loading="lazy">>
+                        <img src="Images/projects/deepfocus.webp" alt="DeepFocus" class="card-img" loading="lazy">
                         <h3 class="card-name">DeepFocus</h3>
                         <p class="card-info">لندینگ پیج یه اپ تمرکز فرضی با تم تاریک، انیمیشن ظاهر شدن کارت‌ها هنگام
                             اسکرول و فرم تماس با اعتبارسنجی.</p>
@@ -149,11 +151,12 @@
                                 class="primary-btn" aria-label="دمو DeepFocus">دمو</a>
                             <a href="https://github.com/Amir0rr/DeepFocus" target="_blank" rel="noopener noreferrer"
                                 class="secondary-btn" aria-label="گیت هاب DeepFocus">GitHub</a>
+                            <button class="details-btn" data-project="deepfocus">جزئیات</button>
                         </div>
 
                     </div>
                     <div class="card">
-                        <img src="Images/projects/goodcoffee.webp" alt="GoodCoffee" class="card-img" loading="lazy">>
+                        <img src="Images/projects/goodcoffee.webp" alt="GoodCoffee" class="card-img" loading="lazy">
                         <h3 class="card-name">GoodCoffee</h3>
                         <p class="card-info">لندینگ پیج یه برند قهوه‌ی فرضی با پالت گرم، معرفی محصولات، نظرات مشتریان و
                             فرم خبرنامه.</p>
@@ -168,6 +171,7 @@
                                 class="primary-btn" aria-label="دمو GoodCoffee">دمو</a>
                             <a href="https://github.com/Amir0rr/GoodCoffee" target="_blank" rel="noopener noreferrer"
                                 class="secondary-btn" aria-label="گیت هاب GoodCoffee">GitHub</a>
+                            <button class="details-btn" data-project="goodcoffee">جزئیات</button>
                         </div>
 
                     </div>
@@ -237,6 +241,20 @@
         <p>© ۱۴۰۵ امیرحسین آرمان</p>
     </footer>
 
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+        <div class="dialog-content">
+            <button class="dialog-close" id="dialog-close" aria-label="بستن">✕</button>
+            <img id="dialog-img" src="" alt="">
+            <h3 id="dialog-title"></h3>
+            <p id="dialog-desc"></p>
+            <ul id="dialog-features"></ul>
+            <ul id="dialog-tags" class="card-tags"></ul>
+            <div class="dialog-links">
+                <a id="dialog-demo" class="primary-btn" target="_blank" rel="noopener noreferrer">دمو</a>
+                <a id="dialog-github" class="secondary-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </dialog>
 
     <script src="js/script.js"></script>
 </body>
