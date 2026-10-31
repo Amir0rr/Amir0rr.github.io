@@ -72,8 +72,13 @@
             </section>
             <section class="projects" id="projects">
                 <h2>پروژه‌های من</h2>
+                <div class="filters" role="group" aria-label="فیلتر پروژه‌ها">
+                    <button class="filter-btn" data-filter="all" aria-pressed="true">همه</button>
+                    <button class="filter-btn" data-filter="landing" aria-pressed="false">لندینگ پیج</button>
+                    <button class="filter-btn" data-filter="app" aria-pressed="false">اپ وب</button>
+                </div>
                 <div class="cards-grid">
-                    <div class="card">
+                    <div class="card" data-category="app">
                         <img src="Images/projects/to-do-app.webp" alt="پروژه To-DO-App" class="card-img"
                             fetchpriority="high">
                         <h3 class="card-name">To-Do-App</h3>
@@ -94,7 +99,7 @@
                         </div>
 
                     </div>
-                    <div class="card">
+                    <div class="card" data-category="app">
                         <img src="Images/projects/weather-app.webp" alt="Weather App" class="card-img" loading="lazy">
                         <h3 class="card-name">Weather App</h3>
                         <p class="card-info">با جستجوی نام شهر، دما، سرعت باد و وضعیت هوا رو از یک API عمومی می‌گیره و
@@ -115,7 +120,7 @@
                         </div>
 
                     </div>
-                    <div class="card">
+                    <div class="card" data-category="landing">
                         <img src="Images/projects/tasklyft.webp" alt="Tasklyft" class="card-img" loading="lazy">
                         <h3 class="card-name">Tasklyft</h3>
                         <p class="card-info">لندینگ پیج یه ابزار مدیریت پروژه‌ی فرضی، با داشبورد ساخته‌شده با CSS، جدول
@@ -135,7 +140,7 @@
                         </div>
 
                     </div>
-                    <div class="card">
+                    <div class="card" data-category="landing">
                         <img src="Images/projects/deepfocus.webp" alt="DeepFocus" class="card-img" loading="lazy">
                         <h3 class="card-name">DeepFocus</h3>
                         <p class="card-info">لندینگ پیج یه اپ تمرکز فرضی با تم تاریک، انیمیشن ظاهر شدن کارت‌ها هنگام
@@ -155,7 +160,7 @@
                         </div>
 
                     </div>
-                    <div class="card">
+                    <div class="card" data-category="landing">
                         <img src="Images/projects/goodcoffee.webp" alt="GoodCoffee" class="card-img" loading="lazy">
                         <h3 class="card-name">GoodCoffee</h3>
                         <p class="card-info">لندینگ پیج یه برند قهوه‌ی فرضی با پالت گرم، معرفی محصولات، نظرات مشتریان و

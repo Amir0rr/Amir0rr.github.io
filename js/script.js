@@ -1,6 +1,7 @@
 const dropdownBtn = document.querySelector(".dropdown-btn");
 const dropdown = document.querySelector(".dropdown");
 const dropdownLink = document.querySelectorAll(".dropdown-link");
+
 const dialog = document.querySelector("#project-dialog");
 const openDialog = document.querySelectorAll(".details-btn");
 const closeDialog = document.querySelector("#dialog-close");
@@ -11,6 +12,9 @@ const dialogFeatures = document.querySelector("#dialog-features");
 const dialogTags = document.querySelector("#dialog-tags");
 const dialogDemo = document.querySelector("#dialog-demo");
 const dialogGithub = document.querySelector("#dialog-github");
+
+const filterBtns = document.querySelectorAll(".filter-btn");
+const cardFilter = document.querySelectorAll(".card");
 
 const projects = {
   todo: {
@@ -159,4 +163,35 @@ dialog.addEventListener("click", (e) => {
   if (e.target === dialog) {
     dialog.close();
   }
+});
+
+// Filter projects
+
+// Filter projects
+
+filterBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const btnCategory = btn.dataset.filter;
+
+    filterBtns.forEach((b) => b.setAttribute("aria-pressed", "false"));
+    btn.setAttribute("aria-pressed", "true");
+
+    cardFilter.forEach((card) => {
+      const matches =
+        btnCategory === "all" || card.dataset.category === btnCategory;
+
+      if (matches) {
+        card.classList.remove("is-hidden");
+        card.offsetWidth;
+        card.classList.remove("is-hiding");
+      } else {
+        card.classList.add("is-hiding");
+        setTimeout(() => {
+          if (card.classList.contains("is-hiding")) {
+            card.classList.add("is-hidden");
+          }
+        }, 300);
+      }
+    });
+  });
 });
