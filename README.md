@@ -13,6 +13,8 @@ My personal portfolio website, built to showcase my projects, skills and contact
 - Animated mobile menu with keyboard support (Escape key and click outside to close)
 - Five featured projects with live demo and source code links
 - Clean, light theme with a consistent color palette
+- Project detail modals
+- Category filter for projects
 
 ## Built with
 
